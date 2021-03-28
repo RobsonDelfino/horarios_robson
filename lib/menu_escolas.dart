@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:horarios_robson/adicionar_escola.dart';
 
 class MenuEscolas extends StatelessWidget {
   @override
@@ -19,7 +20,10 @@ class MenuEscolas extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton.extended(
             autofocus: true,
-            onPressed: (){},
+            onPressed: (){
+              Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => AdicionarEscola()));
+            },
             label: Text('Adicionar escola'),
             icon: Icon(Icons.add),
             )

@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:horarios_robson/adicionar_componentes_curriculares.dart';
+import 'package:horarios_robson/adicionar_ano_disponivel.dart';
 
-class MenuComponentesCurriculares extends StatelessWidget {
+class MenuAnosDisponiveis extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Menu Componentes curriculares'),
+        title: Text('Menu Anos disponíveis'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Center(
           child: ListView(
             children: [
-              Text('Aqui virão os componenentes curriculares já cadastrados')
+              Text('Aqui virão os anos disponíveis já cadastrados')
             ],
           )
         ),
@@ -22,9 +22,9 @@ class MenuComponentesCurriculares extends StatelessWidget {
             autofocus: true,
             onPressed: (){
               Navigator.push(context,
-                MaterialPageRoute(builder: (context) => AdicionarComponente()));
+                MaterialPageRoute(builder: (context) => AdicionarAnoDisponivel()));
             },
-            label: Text('Adicionar componente'),
+            label: Text('Adicionar ano'),
             icon: Icon(Icons.add),
             )
     );
